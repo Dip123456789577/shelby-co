@@ -289,7 +289,7 @@ function Hero({ particles }: { particles: { id: number; left: number; size: numb
 
 
       {/* Drifting particles */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
+      <div aria-hidden className="absolute inset-0 z-[5] pointer-events-none">
         {particles.map((p) => (
           <span
             key={p.id}
