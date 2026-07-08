@@ -120,17 +120,20 @@ function ShelbyPage() {
     return () => obs.disconnect();
   }, []);
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
   const particles = useMemo(
-    () => Array.from({ length: 28 }).map((_, i) => ({
+    () => mounted ? Array.from({ length: 28 }).map((_, i) => ({
       id: i,
       left: Math.random() * 100,
       size: 2 + Math.random() * 4,
       dur: 14 + Math.random() * 22,
       delay: -Math.random() * 20,
       opacity: 0.15 + Math.random() * 0.4,
-    })),
-    [],
+    })) : [],
+    [mounted],
   );
+
 
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
