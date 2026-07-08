@@ -275,7 +275,7 @@ function Nav({
 function Hero({ particles }: { particles: { id: number; left: number; size: number; dur: number; delay: number; opacity: number }[] }) {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0">
         <img
           src={heroNoir}
           alt="Foggy 1920s Birmingham street at night"
@@ -283,9 +283,10 @@ function Hero({ particles }: { particles: { id: number; left: number; size: numb
           height={1088}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/50 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,var(--background)_85%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/40 to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_10%,var(--background)_95%)]" />
       </div>
+
 
       {/* Drifting particles */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
