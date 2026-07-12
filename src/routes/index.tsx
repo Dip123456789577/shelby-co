@@ -36,7 +36,7 @@ const CHARACTERS = [
     actor: "Alexander Vance",
     role: "The Abyssal Vanguard",
     bio: "Once a surface naval commander, Valerius fell into the deep during the Great Collapse. Now he leads the Abyssal Vanguard with iron discipline, his eyes adapted to the crushing darkness of the ocean depths.",
-    demoReel: "https://www.youtube.com/embed/q3-eF74U8xQ?autoplay=1",
+    demoReel: "https://www.youtube.com/embed/XhsyZnVx2rQ?autoplay=1",
   },
   {
     img: char2,
@@ -44,7 +44,7 @@ const CHARACTERS = [
     actor: "Cora Byrne",
     role: "The Siren of Silence",
     bio: "Master of acoustic warfare and deep-sea navigation, Seraphina commands the silent fleets that patrol the midnight zones. Her voice can shatter steel hulls or calm the most turbulent waters.",
-    demoReel: "https://www.youtube.com/embed/q3-eF74U8xQ?autoplay=1",
+    demoReel: "https://www.youtube.com/embed/uViw5VtXrlE?autoplay=1",
   },
   {
     img: char3,
@@ -52,7 +52,7 @@ const CHARACTERS = [
     actor: "Rufus Blackwood",
     role: "The Iron Titan",
     bio: "Enhanced with pressure-resistant cybernetics, Marcus survived pressures that would crush ordinary men. He now commands the heavy assault divisions, his body a living fortress of deep-sea engineering.",
-    demoReel: "https://www.youtube.com/embed/q3-eF74U8xQ?autoplay=1",
+    demoReel: "https://www.youtube.com/embed/d79LoSLD8HU?autoplay=1",
   },
   {
     img: char4,
@@ -60,7 +60,7 @@ const CHARACTERS = [
     actor: "Julian Hollis",
     role: "The Void Walker",
     bio: "A brilliant scientist turned commander, Lyra discovered the ancient technologies buried beneath the ocean floor. She now leads the research and reconnaissance divisions, her mind as deep as the waters she explores.",
-    demoReel: "https://www.youtube.com/embed/q3-eF74U8xQ?autoplay=1",
+    demoReel: "https://www.youtube.com/embed/aQNixrJUk_o?autoplay=1",
   },
 ];
 
@@ -664,11 +664,11 @@ function Characters({
 
 /* -------------------- SEASONS -------------------- */
 const SEASON_VIDEOS: Record<number, string> = {
-  1: "q3-eF74U8xQ",
-  2: "q3-eF74U8xQ",
-  3: "q3-eF74U8xQ",
-  4: "q3-eF74U8xQ",
-  5: "q3-eF74U8xQ",
+  1: "hTcfSKgUut4",
+  2: "YPY7J-flzE8",
+  3: "4rgYUipGJNo",
+  4: "dYo91Fq9tKY",
+  5: "nulvWqYUM8k",
 };
 
 function Seasons({
@@ -803,7 +803,7 @@ function Trailer() {
           ) : (
             <div className="absolute inset-0 w-full h-full bg-black">
               <iframe
-                src="https://www.youtube.com/embed/q3-eF74U8xQ?autoplay=1"
+                src="https://www.youtube.com/embed/mcvLKldPM08?autoplay=1"
                 title="Official Trailer"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
